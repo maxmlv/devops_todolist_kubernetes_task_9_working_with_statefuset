@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Create k8s cluster
+kind create cluster --config cluster.yml
+kubectl config use-context kind-kind
+
 # MySQL infrastructure
 kubectl apply -f ./.infrastructure/mysql/namespace.yml
 kubectl apply -f ./.infrastructure/mysql/secret.yml
