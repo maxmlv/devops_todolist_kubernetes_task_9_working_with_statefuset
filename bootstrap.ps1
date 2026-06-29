@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # MySQL infrastructure
 kubectl apply -f ./.infrastructure/mysql/namespace.yml
 kubectl apply -f ./.infrastructure/mysql/secret.yml
